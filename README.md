@@ -5,6 +5,11 @@
 This project is an end-to-end options analytics system built in Python using the Black–Scholes model and real market data. The project retrieves stock price data, computes historical volatility, prices options, estimates implied volatility, calculates Greeks, and generates several visual analytics used in quantitative finance.
 The repository contains both the code used to generate the analysis and the resulting visualizations.
 
+## Badges
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Status](https://img.shields.io/badge/Status-Active-green)
+![License](https://img.shields.io/badge/License-Educational-lightgrey)
+
 ## Key Features
 
 Fetch real stock market data using Yahoo Finance

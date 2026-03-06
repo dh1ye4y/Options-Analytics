@@ -2,32 +2,21 @@
 
 ## Overview
 
-This project is an end‑to‑end options analytics pipeline built in Python using the Black–Scholes model and real market data. It integrates financial theory, numerical methods, and data visualization to simulate how options are analyzed in trading environments.
-
-The system retrieves stock data, computes historical volatility, prices options, extracts implied volatility, calculates Greeks, and generates multiple visual analytics used in quantitative finance.
+This project is an end-to-end options analytics system built in Python using the Black–Scholes model and real market data. The project retrieves stock price data, computes historical volatility, prices options, estimates implied volatility, calculates Greeks, and generates several visual analytics used in quantitative finance.
+The repository contains both the code used to generate the analysis and the resulting visualizations.
 
 ## Key Features
 
-Retrieve real stock market data using Yahoo Finance
-
+Fetch real stock market data using Yahoo Finance
 Clean and preprocess financial time series
-
 Compute log returns and historical volatility
-
-Implement the Black–Scholes pricing model from scratch
-
+Implement the Black–Scholes option pricing model
 Calculate option Greeks (Delta, Gamma, Vega)
-
 Estimate implied volatility using the Newton–Raphson method
-
 Compare historical vs implied volatility
-
-Analyze volatility behavior around earnings events
-
+Analyze volatility behavior around earnings announcements
 Generate volatility smile
-
 Visualize theta decay
-
 Perform option price sensitivity analysis
 
 ## Project Structure
@@ -40,7 +29,15 @@ options-analytics/
 ├── market_data.py       # Market data retrieval and preprocessing
 ├── requirements.txt     # Python dependencies
 ├── README.md            # Project documentation
-└── .gitignore           # Files ignored by Git
+├── .gitignore           # Files ignored by Git
+│
+└── results/             # Generated graphs and analysis outputs
+    ├── historical_vs_implied_vol.png
+    ├── volatility_earnings.png
+    ├── option_price_vs_stock.png
+    ├── delta_vs_stock.png
+    ├── volatility_smile.png
+    └── theta_decay.png
 ```
 
 ## Installation
@@ -68,7 +65,20 @@ Days to option expiry (example: 30)
 
 Strike percentage relative to current price (example: 1.05 for 5% OTM)
 
-The script will then perform the full analytics workflow and generate multiple plots.
+## The script will automatically:
+
+Download historical stock data
+
+Compute returns and volatility
+
+Price options using the Black–Scholes model
+
+Estimate implied volatility
+
+Generate multiple analytical plots
+
+Save all plots inside the results/ folder
+
 
 ## Analytics Produced
 

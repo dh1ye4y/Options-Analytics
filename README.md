@@ -138,7 +138,7 @@ Historical Volatility
 
 Historical Volatility = Std(Log Returns) × √252
 
-**Implied Volatility
+Implied Volatility
 
 Implied volatility is computed numerically using the Newton–Raphson method, solving for volatility such that the Black–Scholes price matches the observed market price.
 

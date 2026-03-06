@@ -44,42 +44,45 @@ options-analytics/
 
 ## Installation
 
+## Installation
+
 1. Clone the repository
 
+```bash
 git clone https://github.com/YOUR_USERNAME/options-analytics.git
 cd options-analytics
+```
 
 2. Install required packages
 
+```bash
 pip install -r requirements.txt
+```
 
-Usage
+---
+
+## Usage
 
 Run the main script:
 
+```bash
 python main.py
+```
 
 You will be prompted to provide:
 
-Stock ticker (example: AAPL)
-
-Days to option expiry (example: 30)
-
-Strike percentage relative to current price (example: 1.05 for 5% OTM)
+- **Stock ticker** (example: `AAPL`)
+- **Days to option expiry** (example: `30`)
+- **Strike percentage relative to current price** (example: `1.05` for 5% OTM)
 
 ## The script will automatically:
 
-Download historical stock data
-
-Compute returns and volatility
-
-Price options using the Black–Scholes model
-
-Estimate implied volatility
-
-Generate multiple analytical plots
-
-Save all plots inside the results/ folder
+- Download historical stock data
+- Compute returns and volatility
+- Price options using the Black–Scholes model
+- Estimate implied volatility
+- Generate multiple analytical plots
+- Save all plots inside the results/ folder
 
 
 ## Analytics Produced
@@ -96,15 +99,11 @@ Examines volatility behavior in a ±30 day window around earnings announcements.
 
 Displays:
 
-Current stock price
-
-Historical volatility
-
-Risk‑free rate
-
-Black–Scholes option price
-
-Option Greeks
+- Current stock price
+- Historical volatility
+- Risk-free rate
+- Black–Scholes option price
+- Option Greeks
 
 4. Sensitivity Analysis
 
@@ -120,47 +119,41 @@ Shows how option value decreases as time to expiry approaches.
 
 ## Financial Concepts Used
 
-Black–Scholes Model
+### Black–Scholes Model
 
 Used to price European options based on five parameters:
 
-Stock price (S)
+- **Stock price (S)**
+- **Strike price (K)**
+- **Time to maturity (T)**
+- **Risk-free interest rate (r)**
+- **Volatility (σ)**
 
-Strike price (K)
+---
 
-Time to maturity (T)
+### Historical Volatility
 
-Risk‑free interest rate (r)
+- **Historical Volatility = Std(Log Returns) × √252**
 
-Volatility (σ)
+---
 
-Historical Volatility
+### Implied Volatility
 
-Historical Volatility = Std(Log Returns) × √252
-
-Implied Volatility
-
-Implied volatility is computed numerically using the Newton–Raphson method, solving for volatility such that the Black–Scholes price matches the observed market price.
+- Implied volatility is computed numerically using the **Newton–Raphson method**, solving for volatility such that the **Black–Scholes price matches the observed market price**.
 
 ## Limitations
 
-Assumes European option exercise
-
-Assumes constant volatility (Black–Scholes assumption)
-
-Market option prices are simulated for demonstration purposes
-
-Uses US 10Y Treasury yield as a proxy for the risk‑free rate
+- Assumes European option exercise
+- Assumes constant volatility (Black–Scholes assumption)
+- Market option prices are simulated for demonstration purposes
+- Uses US 10Y Treasury yield as a proxy for the risk-free rate
 
 ## Possible Improvements
 
-Integrate real option chain data
-
-Add support for put option analytics
-
-Implement stochastic volatility models (e.g., Heston model)
-
-Build an interactive dashboard using Streamlit
+- Integrate real option chain data
+- Add support for put option analytics
+- Implement stochastic volatility models (e.g., Heston model)
+- Build an interactive dashboard using Streamlit
 
 ## Dependencies
 

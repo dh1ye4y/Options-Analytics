@@ -10,17 +10,17 @@ The repository contains both the code used to generate the analysis and the resu
 
 ## Key Features
 
-Fetch real stock market data using Yahoo Finance
-Clean and preprocess financial time series
-Compute log returns and historical volatility
-Implement the Black–Scholes option pricing model
-Calculate option Greeks (Delta, Gamma, Vega)
-Estimate implied volatility using the Newton–Raphson method
-Compare historical vs implied volatility
-Analyze volatility behavior around earnings announcements
-Generate volatility smile
-Visualize theta decay
-Perform option price sensitivity analysis
+- Fetch real stock market data using Yahoo Finance
+- Clean and preprocess financial time series
+- Compute log returns and historical volatility
+- Implement the Black–Scholes option pricing model
+- Calculate option Greeks (Delta, Gamma, Vega)
+- Estimate implied volatility using the Newton–Raphson method
+- Compare historical vs implied volatility
+- Analyze volatility behavior around earnings announcements
+- Generate volatility smile
+- Visualize theta decay
+- Perform option price sensitivity analysis
 
 ## Project Structure
 

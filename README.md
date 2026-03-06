@@ -20,7 +20,6 @@ The repository contains both the code used to generate the analysis and the resu
 - Analyze volatility behavior around earnings announcements
 - Generate volatility smile
 - Visualize theta decay
-- Perform option price sensitivity analysis
 
 ## Project Structure
 

@@ -190,7 +190,7 @@ yfinance
 
 Install them with:
 
-pip install -r requirements.txt
+pip install -r Requirements.txt
 
 ## Author
 

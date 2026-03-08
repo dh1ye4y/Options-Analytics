@@ -6,8 +6,8 @@ Options Analytics and Volatility Modeling System
 ![License](https://img.shields.io/badge/License-Educational-lightgrey)
 ## Overview
 
-This project is an end-to-end options analytics system built in Python using the Black–Scholes model and real market data. The project retrieves stock price data, computes historical volatility, prices options, estimates implied volatility, calculates Greeks, and generates several visual analytics used in quantitative finance.
-The repository contains both the code used to generate the analysis and the resulting visualizations.
+This project implements an end-to-end options analytics system in Python based on the Black–Scholes framework and real market data. It retrieves historical stock price data, estimates historical volatility, prices European options, computes implied volatility, and evaluates option Greeks.
+The system also produces multiple visual analytics commonly used in quantitative finance, enabling analysis of volatility behavior, option pricing dynamics, and risk sensitivities. The repository includes both the complete implementation used to perform the analysis and the generated visualizations.
 
 ## Key Features
 
